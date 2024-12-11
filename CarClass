@@ -1,0 +1,18 @@
+class car {
+    //Specifications
+    make: string;
+    model: string;
+    year: number;
+    own:string;
+    //Maker
+    constructor(make: string, model: string, year: number, own: string) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
+      this.own=own;
+    }
+  }
+  const myCar = new car("Mclaren", "P1", 2019, BALAJI);
+  console.log("Owner:", myCar.own); 
+  console.log("Make:", myCar.make);     
+  console.log("Year:", myCar.year);   
