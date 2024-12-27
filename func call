@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vetri</title>
+    <!-- Include TypeScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/4.4.3/typescript.min.js"></script>
+    <script type="module" src="./script.ts"></script>
+</head>
+<body>
+    <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat veniam, libero culpa voluptatum harum molestias similique eos suscipit tempore.</p>
+    <button onclick="vetri()">Change Text</button>
+</body>
+</html>
+#typescript...../
+function vetri(): void {
+    const x: HTMLElement | null = document.getElementById("one");
+    if (x) {
+        x.textContent = "Jamuna";
+    }
+}
+export { vetri };
